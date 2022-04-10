@@ -25,6 +25,8 @@ h1 {
     height: 30px;
     top: 50%;
     margin-top: 50px;
+    width: fit-content;
+    font-weight: bolder;
 }
 
 .btn:hover {

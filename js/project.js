@@ -10,9 +10,20 @@ const colors = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
     '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'
 ];
 
-function changeColor() {
-    const colorIndex = parseInt(Math.random() * colors.length)
-    document.body.style.background = colors[colorIndex];
-    document.getElementsByClassName("btn") = colors[colorIndex];
+const Size = ["10px", "15px", "20px", "25px", "30px", "35px", "40px", "45px", "50px", "25px"];
+
+function changeFSize() {
+    const SizeIndex = parseInt(Math.random() * Size.length)
+    document.getElementById("Heading").style.fontSize = Size[SizeIndex];
+
+}
+
+function changeBGColor() {
+    const colorIndexBackground = parseInt(Math.random() * colors.length)
+    const colorIndexBtn = parseInt(Math.random() * colors.length)
+
+    document.body.style.background = colors[colorIndexBackground];
+    document.getElementById("changeBGColor").style.background = colors[colorIndexBtn];
+    // document.getElementsByClassName("btn") = colors[colorIndex];
 
 }
